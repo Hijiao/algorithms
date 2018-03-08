@@ -14,33 +14,15 @@ class Solution(object):
         """
         p, q = l1, l2
         r = ListNode(0)
-        curr = r.next
+        curr = r
         carry = 0
-        while p is not None and q is not None or carry != 0:
-            sum = p.val if p else 0 + q.val if q else 0 +carry
-            curr = ListNode(sum % 10)
+        while p is not None or q is not None or carry != 0:
+            pval = p.val if p else 0
+            qval = q.val if q else 0
+            sum = pval + qval + carry
+            curr.next = ListNode(sum % 10)
             curr = curr.next
             carry = sum / 10
-            p = p.next
-            q = q.next
-        while p is not None or carry != 0:
-            sum = p.val if p else 0 + carry
-            curr = ListNode(sum % 10)
-            curr = curr.next
-            carry = sum / 10
-            p = p.next
-        while q is not None or carry != 0:
-            sum =q.val if q else 0 + carry
-            curr = ListNode(sum % 10)
-            curr = curr.next
-            carry = sum / 10
-            q = q.next
+            p = p.next if p else None
+            q = q.next if q else None
         return r.next
-
-
-p = None
-q = ListNode(1)
-
-s = p.val if p else 0 + q.val if q else 0
-print s
-{}.has_key()
