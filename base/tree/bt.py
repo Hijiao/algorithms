@@ -36,6 +36,14 @@ class Tree(object):
             print node.value
             self.in_order(node.right)
 
+    def post_order(self, node):
+        if node is None:
+            pass
+        else:
+            self.post_order(node.left)
+            self.post_order(node.right)
+            print node.value
+
 
 if __name__ == '__main__':
     t = Tree()
