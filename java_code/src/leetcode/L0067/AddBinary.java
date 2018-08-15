@@ -1,4 +1,4 @@
-package L0067;
+package leetcode.L0067;
 
 public class AddBinary {
     private int count(char a, char b, char c) {

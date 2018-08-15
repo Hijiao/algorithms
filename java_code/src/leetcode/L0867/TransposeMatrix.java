@@ -1,4 +1,4 @@
-package L0867;
+package leetcode.L0867;
 
 import java.util.Arrays;
 

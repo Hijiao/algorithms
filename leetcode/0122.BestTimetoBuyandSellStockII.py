@@ -11,3 +11,21 @@ class Solution(object):
             if d > 0:
                 profit += d
         return profit
+
+
+
+    def maxProfit2(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        if not prices:
+            return 0
+        hold = float("-inf")
+        not_hold = 0
+
+        for p in prices:
+            hold = max(hold, not_hold - p)
+            not_hold = max(not_hold, hold + p)
+
+        return not_hold

@@ -1,4 +1,4 @@
-package L0075;
+package leetcode.L0075;
 
 import java.util.Arrays;
 

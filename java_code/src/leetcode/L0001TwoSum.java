@@ -1,12 +1,14 @@
+package leetcode;
+
 import java.util.Arrays;
 import java.util.HashMap;
 
 public class L0001TwoSum {
 
-    public int[] twoSum(int [] nums,int target){
+    public int[] twoSum(int [] nums, int target){
         int [] ret = new int[2];
         HashMap<Integer,Integer> map = new HashMap<Integer,Integer>(nums.length);
-        for(int i = 0;i < nums.length;i++){
+        for(int i = 0; i < nums.length; i++){
             if (map.containsKey(target - nums[i])) {
                 ret[0]= i;
                 ret[1] = map.get(target - nums[i]);

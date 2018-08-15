@@ -1,8 +1,7 @@
-package L0066;
+package leetcode.L0066;
 
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 
 public class PlusOne {
 

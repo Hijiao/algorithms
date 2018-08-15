@@ -1,7 +1,6 @@
-package L0119;
+package leetcode.L0119;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class PascalSTriangleII {

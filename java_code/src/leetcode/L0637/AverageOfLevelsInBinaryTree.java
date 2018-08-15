@@ -1,8 +1,12 @@
-package L0637;
+package leetcode.L0637;
 
 
-import java.util.*;
-import base.TreeNode;
+import leetcode.base.TreeNode;
+
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 public class AverageOfLevelsInBinaryTree {
 

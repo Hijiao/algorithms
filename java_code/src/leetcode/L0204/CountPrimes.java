@@ -1,4 +1,4 @@
-package L0204;
+package leetcode.L0204;
 
 public class CountPrimes {
     public int countPrimes(int n) {

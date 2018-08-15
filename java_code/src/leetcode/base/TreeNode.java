@@ -1,4 +1,4 @@
-package base;
+package leetcode.base;
 
 public class TreeNode {
 
