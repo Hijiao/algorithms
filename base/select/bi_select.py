@@ -1,4 +1,4 @@
-# from bisect import bisect
+from bisect import bisect
 
 def bisect(array, val):
     low = 0
@@ -15,4 +15,4 @@ def bisect(array, val):
     return low
 
 
-print bisect([0, 1, 2, 3], 2)
+print(bisect([0, 1, 2, 3], 2))
